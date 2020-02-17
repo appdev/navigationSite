@@ -1,0 +1,39 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'war'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.50'
+}
+
+group = 'fm.bgm'
+version = '0.0.2-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa:2.1.7.RELEASE')
+    implementation('com.google.code.gson:gson:2.8.5')
+    implementation("org.xerial:sqlite-jdbc:3.28.0")
+    implementation("commons-io:commons-io:2.6")
+    implementation("org.apache.shiro:shiro-crypto-hash:1.4.1")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf:2.1.7.RELEASE")
+    implementation("com.baomidou:mybatis-plus-boot-starter:3.1.2")
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "category": "常用·工作",
+    "position": "1"
+  },
+  {
+    "category": "常用·社交",
+    "position": "2"
+  },
+  {
+    "category": "常用·生活",
+    "position": "3"
+  },
+  {
+    "category": "新闻",
+    "position": "4"
+  },
+  {
+    "category": "视频",
+    "position": "5"
+  },
+  {
+    "category": "购物",
+    "position": "6"
+  },
+  {
+    "category": "发现",
+    "position": "7"
+  },
+  {
+    "category": "商旅",
+    "position": "8"
+  },
+  {
+    "category": "银行",
+    "position": "9"
+  }
+]
