@@ -5,5 +5,5 @@
 
 demo:https://hao.bgm.fm
 
-![](./demo.png)
+![](https://github.com/appdev/navigationSite/blob/master/demo.png)
 
