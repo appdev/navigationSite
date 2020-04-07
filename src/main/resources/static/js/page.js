@@ -1,10 +1,11 @@
 $(document).ready(function () {
-    $("body").css("background-image", "url(https://static.apkdv.com/hao/img/mountain.jpg)");
+    loadImage();
+    $("#change_bg").click(function () {
+        extracted()
+    });
     //自定义改动，避免出现先加载原始站点，然后又更新部分站点信息的情况；设置整体div.blocks为透明，不影响resize，并且可以做到在获取storage数据后再取消透明
     $("div.blocks").css('opacity', '0');
     $(window).resize(function () {
-
-
         $("div.content").css({
             position: "initial",
             top: 15,
@@ -879,10 +880,10 @@ $(document).ready(function () {
     function initLoginStatus() {
         let cookie = $.cookie("login");
         if (cookie === "" || cookie == null || cookie === "null") {
-            $("#login").text('登录');
+            $("#login").attr('src', '../img/btnuser_login.png');
             $(".customize").css("display", "none");
         } else {
-            $("#login").text('退出');
+            $("#login").attr('src', '../img/btnlogout.png');
             $("#loginModal").attr('id', 'loginModal233');
         }
     }
@@ -957,4 +958,3 @@ function openBaidu() {
     let url = "https://www.dogedoge.com/results?q=" + $('#b-word').val()
     window.open(url)
 }
-
